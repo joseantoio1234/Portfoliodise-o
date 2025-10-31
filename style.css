@@ -1,4 +1,4 @@
-/* style.css - Versión Sencilla */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ body {
     line-height: 1.6;
 }
 
-/* Navegación */
+/* Menu de navegacion (navgar) */
 .navegacion {
     background: white;
     padding: 15px 0;
@@ -22,7 +22,7 @@ body {
     top: 0;
 }
 
-.nav-menu {
+.menu-navgar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,95 +31,68 @@ body {
     padding: 0 20px;
 }
 
+.navegacion-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+
+
+
+/* Logo */
+
 .logo-container {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.logo-img {
+.logo-imgen {
     width: 40px;
     height: 40px;
     background: #4a6cf7;
     border-radius: 8px;
 }
 
-.logo-text {
+.logo-texto {
     font-size: 20px;
     font-weight: bold;
     color: #4a6cf7;
 }
 
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-}
-
-.nav-links a:hover {
-    color: #4a6cf7;
-}
 
 /* Hero Section */
-.hero {
+.central{
     margin-top: 80px;
     padding: 60px 20px;
     background: white;
     text-align: center;
 }
 
-.hero-content h1 {
+.contenido h1 {
     font-size: 2.5rem;
     margin-bottom: 15px;
     color: #333;
 }
 
-.nombre-destacado {
+.nombre {
     color: #4a6cf7;
 }
 
-.hero-subtitle {
+.subtitulo{
     font-size: 1.3rem;
     color: #666;
     margin-bottom: 10px;
 }
 
-.hero-desc {
+.descripcion {
     font-size: 1.1rem;
     color: #777;
     margin-bottom: 25px;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.btn-hero {
-    background: #4a6cf7;
-    color: white;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.btn-hero:hover {
-    background: #3a5ce5;
-}
-
-.hero-imagen img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-top: 30px;
-    border: 5px solid #f0f0f0;
 }
 
 /* Secciones generales */
@@ -129,15 +102,8 @@ body {
     margin: 0 auto;
 }
 
-.sobre-mi, .habilidades {
-    background: white;
-}
 
-.proyectos, .contacto {
-    background: #f8f9fa;
-}
-
-h2 {
+h2  {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 40px;
@@ -147,20 +113,20 @@ h2 {
 
 
 /* Proyectos */
-.grid-proyectos {
+.colocaciondetarjetas {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 25px;
 }
 
-.card-proyecto {
+.fondodecartas {
     background: white;
     padding: 25px;
     border-radius: 8px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
-.proyecto-img {
+.imagenes{
     background: #ddd;
     height: 200px;
     border-radius: 5px;
@@ -181,27 +147,13 @@ h2 {
     margin-bottom: 15px;
 }
 
-.tech-tags {
-    margin-bottom: 15px;
-}
 
-.tech-tags span {
-    display: inline-block;
-    background: #e9ecef;
-    color: #495057;
-    padding: 5px 10px;
-    border-radius: 15px;
-    font-size: 0.8rem;
-    margin-right: 5px;
-    margin-bottom: 5px;
-}
-
-.proyecto-links {
+.proyecto-links-botones {
     display: flex;
     gap: 10px;
 }
 
-.btn {
+.boton {
     display: inline-block;
     background: #4a6cf7;
     color: white;
@@ -216,13 +168,13 @@ h2 {
     background: #3a5ce5;
 }
 
-.btn-secundario {
+.boton-secundario {
     background: transparent;
     color: #4a6cf7;
     border: 2px solid #4a6cf7;
 }
 
-.btn-secundario:hover {
+.boton-secundario:hover {
     background: #4a6cf7;
     color: white;
 }
@@ -238,7 +190,7 @@ h2 {
     padding: 40px 20px;
 }
 
-.footer-content {
+.contenido-footer {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
